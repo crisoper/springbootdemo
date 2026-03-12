@@ -62,7 +62,10 @@ public class UsuarioController {
 
     // Actualizar usuario
     @PutMapping("/{id}")
-    public ResponseEntity<Usuario> actualizarUsuario(@PathVariable Long id,@Valid @RequestBody UsuarioDTO usuarioDTO) {
+    public ResponseEntity<Usuario> actualizarUsuario(
+    		@PathVariable Long id,
+    		@Valid @RequestBody UsuarioDTO usuarioDTO
+	) {
     	
     	 Usuario usuario = new Usuario();
          usuario.setNombre(usuarioDTO.getNombre());
@@ -87,3 +90,7 @@ public class UsuarioController {
     }
     
 }
+
+
+
+
