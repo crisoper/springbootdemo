@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.stereotype.Service;
 
+import com.crisoper.demo.dto.RolDTO;
 import com.crisoper.demo.model.Rol;
 import com.crisoper.demo.repository.RolRespository;
 
